@@ -6,4 +6,4 @@ function lang_check() {
 }
 
 if (window.location.href == "https://portauralis.github.io" || window.location.href == "https://portauralis.github.io/index.html")
-	window.onload = lang_check();
+	lang_check();
