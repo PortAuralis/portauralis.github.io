@@ -5,5 +5,5 @@ function lang_check() {
 		window.location.href = "index.ita.html";
 }
 
-if (window.location.href == "https://portauralis.github.io" || window.location.href == "https://portauralis.github.io/index.html")
+if (window.location.href == "https://portauralis.github.io/" || window.location.href == "https://portauralis.github.io/index.html")
 	lang_check();
