@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portale Auralis - Elarah Inya</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+                body {
+                        background-color: #f3e8d6;
+                        font-family: 'Georgia', serif;
+                }
+        </style>
+</head>
+<body class="text-[#2c2c2c]">
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-6">
+                <button onclick="toggleSidebar()" class="mb-6 text-gray-600 hover:text-gray-800">
+                        ✕ Chiudi
+                </button>
+                <!-- Selezione Lingua -->
+                <div class="text-left">
+                        <button id="languageDropdownBtn" class="w-full text-left text-gray-700 font-semibold py-2 hover:text-[#8a6e50] focus:outline-none">
+                                🌐 Lingua <span class="ml-1">▾</span>
+                        </button>
+                        <div id="languageDropdown" class="ml-4 mt-1 hidden flex-col space-y-1">
+                                <a href="index.ita.html" class="text-gray-600 hover:text-[#8a6e50] block">Italiano</a>
+                                <a href="index.spa.html" class="text-gray-600 hover:text-[#8a6e50] block">Español</a>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Header -->
+        <header class="flex items-center justify-between px-6 py-4">
+                <!-- Hamburger Button -->
+                <button onclick="toggleSidebar()" class="text-3xl text-[#8a6e50] focus:outline-none">
+                        &#9776;
+                </button>
+
+                <!-- Titolo -->
+                <div class="text-center flex-1">
+                        <h1 class="text-3xl md:text-4xl font-bold text-[#3a2b1f]">✧ Candele ✧</h1>
+                        <p class="italic text-lg text-[#5f4b3c]">Per rituali e percorsi profondi</p>
+                </div>
+
+                <!-- Logo a destra -->
+                <div class="w-16 md:w-24">
+                        <img src="./media/IMG-20250713-WA0024.jpg" alt="Logo Portale Auralis" class="w-full h-auto">
+                </div>
+        </header>
+
+        <!-- Intro -->
+        <section class="max-w-4xl mx-auto px-6 py-6 leading-relaxed space-y-4">
+		<p>
+		L'obiettivo del progetto Luce di Auren è quello di offrire oggetti di luce che siano portali verso sè stessi.
+		Strumenti per chi vuole onorare il proprio cammino spirituale e riconnettersi con la propria essenza più pura.
+		</p>
+        </section>
+
+	<section class="max-w-4xl mx-auto px-6 py-10 text-center leading-relaxed space-y-6">
+                <h2 class="text-2xl font-semibold text-[#8a6e50]">✧ Dimensioni ✧</h2>
+		<p>
+		Ogni candela Luce di Auren è disponibile in tre dimensioni, pensate per accompagnarti in diversi momenti della tua vita.
+		</p>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<img src="./media/candele ita.jpg" alt="Dimensioni Candele" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]">
+						🕯 <strong>Piccola</strong> (22 €) per un’intenzione, un desiderio, un messaggio.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]">
+						🕯 <strong>Media</strong> (33 €) per un rituale, un ciclo di guarigione, un passaggio interiore.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]">
+						🕯 <strong>Grande</strong> (44 €) per un percorso profondo, una dedica d’amore o un tempo sacro prolungato.
+					</div>
+					<p>Ogni fiamma è diversa, ogni misura ha il suo tempo.</p>
+					<p>Tutte le misure possono essere personalizzate energeticamente con un'intenzione canalizzata.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-6">
+                <h2 class="text-2xl text-center font-semibold text-[#8a6e50]">✧ Categorie ✧</h2>
+		<h3 class="text-xl font-semibold text-[#7e5c48]"> 🕯️✨ Fiamma del Cuore Dorato </h3>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<h4 class="text-l font-semibold text-[#7e5c48]"> "Io sono Amore" </h4>
+				<img src="./media/Fiamma del Cuore Dorato.jpg" alt="Cuore Dorato" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Accende la fiamma dell’Amore incondizionato dentro di te 
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Ti aiuta a sciogliere ferite emotive, a perdonare e ad accogliere la dolcezza
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Favorisce la guarigione del cuore e l’apertura alla compassione verso te stesso e gli altri
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Un rituale per ricordare che sei degno di amare e di essere amato
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="text-xl font-semibold text-[#7e5c48]"> 🕯️💧 Memoria d’Acqua Stellare </h3>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<h4 class="text-l font-semibold text-[#7e5c48]"> "Io libero e ricordo" </h4>
+				<img src="./media/Memoria D'Acqua Stellare.jpg" alt="Memoria Acqua Stellare" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Una candela per il rilascio emotivo e la purificazione
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Risveglia la memoria animica, aiutandoti a liberare antiche emozioni e pesi karmici
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Porta chiarezza interiore, leggerezza e una connessione più profonda con le tue vite passate e con la tua Anima
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Un atto d’acqua e stelle che lava via ciò che non ti serve più
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="text-xl font-semibold text-[#7e5c48]"> 🕯️🌅 Portale dell’Alba </h3>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<h4 class="text-l font-semibold text-[#7e5c48]"> "Io accolgo il nuovo" </h4>
+				<img src="./media/Portale Dell'Alba.jpg" alt="Portale Alba" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Candela per i nuovi inizi e le rinascite interiori
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Ti aiuta a lasciare andare il passato e a fare spazio al nuovo nella tua vita
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Porta speranza, apertura, ispirazione e chiarezza mentale
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Un invito a dire Sì ai cambiamenti, con fiducia e gratitudine
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="text-xl font-semibold text-[#7e5c48]"> 🕯️🌟 Luce dell’Anima </h3>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<h4 class="text-l font-semibold text-[#7e5c48]"> "Mi accendo per ricordarti chi sei. Yo soy Luz, tú eres Luz." </h4>
+				<img src="./media/Luce Dell'Anima.jpg" alt="Luce Anima" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Candela di connessione animica e risveglio spirituale
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Ti guida a riconoscere la tua vera essenza, a brillare senza paura
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Favorisce meditazione, introspezione e lavoro sul Sé superiore
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Una luce pura che illumina la tua via interiore
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="text-xl font-semibold text-[#7e5c48]"> ✨ Fuoco Sacro </h3>
+		<h4 class="text-l font-semibold text-[#7e5c48]">
+			Questa candela bianca e oro nasce da un’immagine ricevuta in visione, come messaggio da realizzare e condividere. Simbolo del Fuoco Sacro interiore, unisce la purezza del bianco alla Maestria dell’oro per illuminare la verità, purificare ciò che non serve e risvegliare la luce dell’Anima.
+		</h4>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<img src="./media/Fuoco Sacro.jpg" alt="Fuoco Sacro" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					Serve a:
+				</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Purificare lo spazio e l’energia personale
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Illuminarci con chiarezza e verità
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Risvegliare la nostra Maestria interiore
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Consacrare intenzioni, preghiere e riti
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Creare un altare vivo di luce e protezione
+					</div>
+					<p>Accendila con intenzione per portare chiarezza, protezione e potere spirituale sul tuo cammino.
+Un dono creato per chi sceglie di vivere con autenticità e luce.
+</p>
+			</div>
+		</div>
+
+		<h3 class="text-xl font-semibold text-[#7e5c48]"> 🌊 Sorgenti d’Acqua Blu </h3>
+		<h4 class="text-l font-semibold text-[#7e5c48]">Questa candela non è nata da un progetto calcolato.
+È arrivata come un flash visivo improvviso, mentre stavo per addormentarmi:
+ho visto una candela blu acceso, versata in un bicchiere, già pronta a esistere.
+</h4>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<img src="./media/Sorgente D'Acqua Blu.jpg" alt="Sorgenti Acqua" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2">
+				<div class="space-y-3">
+
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+Ho scelto oli essenziali puri – eucalipto, rosmarino, lavanda – per evocare l’aria limpida e l’acqua viva che scorrono.
+Il blu acceso è il simbolo della parola vera, della mente limpida, della connessione sincera con la voce interiore.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+			<p>Sorgenti d’Acqua Blu è un rituale di chiarezza.
+Un alleato nei momenti di confusione o pesantezza.
+Un invito a lasciare fluire l’acqua interiore e ritrovare la verità del cuore.
+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="text-xl font-semibold text-[#7e5c48]">🟣 Sigillo di Luce e Protezione </h3>
+		<h4 class="text-l font-semibold text-[#7e5c48]">
+			Questa candela rituale è forgiata nel colore viola, simbolo di trasmutazione, apertura spirituale e connessione superiore.
+Il viola non è solo un colore: è un portale. È la vibrazione che dissolve il vecchio e lascia emergere la Verità dell’anima.
+
+		</h4>
+		<div class="flex flex-col md:flex-row md:items-start gap-6" style="margin-top: 2%;">
+			<div class="md:w-1/2">
+				<img src="./media/Sigillo Luce Protezione.jpg" alt="Sigillo Luce" class="w-full rounded-2xl shadow object-cover">
+			</div>
+			<div class="md:w-1/2 space-y-4">
+				<div class="space-y-3">
+					Serve a:
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Purificare e armonizzare l’ambiente.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Proteggere il tuo spazio sacro.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Aprire i tuoi canali spirituali.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Favorire la meditazione e la connessione con il Sé Superiore.
+					</div>
+					<div class="bg-[#fef8f4] p-3 rounded-lg shadow-sm border border-[#ecd9cc]"> 
+						Trasmutare energie pesanti in luce.
+					</div>
+					<p>
+La sua fiamma è un sigillo sacro: protegge il tuo campo energetico, crea un cerchio inviolabile di luce e custodisce il tuo lavoro spirituale.
+È la compagna perfetta per meditazioni, preghiere, letture intuitive, rituali di guarigione e di apertura del canale.
+</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+        <footer class="text-center text-sm text-gray-500 py-6">
+                © 2025 Portale Auralis. Tutti i diritti riservati.
+        </footer>
+
+        <!-- Sidebar Toggle Script -->
+        <script>
+                function toggleSidebar() {
+                        const sidebar = document.getElementById("sidebar");
+                        sidebar.classList.toggle("-translate-x-full");
+                }
+
+                // Linguaggio dropdown toggle
+                document.addEventListener("DOMContentLoaded", function () {
+                        const langBtn = document.getElementById("languageDropdownBtn");
+                        const langMenu = document.getElementById("languageDropdown");
+
+                        langBtn.addEventListener("click", function () {
+                                langMenu.classList.toggle("hidden");
+                        });
+
+                        // Chiude il menu se si clicca fuori
+                        document.addEventListener("click", function (e) {
+                                if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+                                        langMenu.classList.add("hidden");
+                                }
+                        });
+                });
+        </script>
+
+</body>
+</html>
+
