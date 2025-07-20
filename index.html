@@ -1,11 +1,187 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portale Auralis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Auralis - Elarah Inya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fdf3e7;
+      font-family: 'Georgia', serif;
+    }
+  </style>
 </head>
-<body>
-	<script src="script.js"></script>
+<body class="text-[#2c2c2c]">
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-6">
+    <button onclick="toggleSidebar()" class="mb-6 text-gray-600 hover:text-gray-800">
+      ✕ Cerrar
+    </button>
+    <!-- Selector de idioma -->
+    <div class="text-left">
+      <button id="languageDropdownBtn" class="w-full text-left text-gray-700 font-semibold py-2 hover:text-[#8a6e50] focus:outline-none">
+        🌐 Idioma <span class="ml-1">▾</span>
+      </button>
+      <div id="languageDropdown" class="ml-4 mt-1 hidden flex-col space-y-1">
+        <a href="index.ita.html" class="text-gray-600 hover:text-[#8a6e50] block">Italiano</a>
+        <a href="index.spa.html" class="text-gray-600 hover:text-[#8a6e50] block">Español</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Encabezado -->
+  <header class="flex items-center justify-between px-6 py-4">
+    <!-- Botón de menú -->
+    <button onclick="toggleSidebar()" class="text-3xl text-[#8a6e50] focus:outline-none">
+      &#9776;
+    </button>
+
+    <!-- Título -->
+    <div class="text-center flex-1">
+      <h1 class="text-3xl md:text-4xl font-bold text-[#3a2b1f]">✧ Elarah Inya ✧</h1>
+      <p class="italic text-lg text-[#5f4b3c]">Sacerdotisa Multinacional del Alma</p>
+    </div>
+
+    <!-- Logo -->
+    <div class="w-16 md:w-24">
+      <img src="media/SAVE_20250713_212932.jpg" alt="Logo Portal Auralis" class="w-full h-auto">
+    </div>
+  </header>
+
+  <!-- Introducción -->
+  <section class="max-w-3xl mx-auto px-6 py-6 leading-relaxed space-y-4">
+    <p>Bienvenid@ a este espacio sagrado que he elegido compartir contigo.<br>
+      Soy Elarah Inya, Sacerdotisa Multinacional del Alma, al servicio de la sanación, 
+      la unión y el recuerdo sagrado más allá de fronteras, lenguas y épocas.
+    </p>
+
+    <p>Mi camino espiritual nace de la escucha profunda del corazón y del diálogo constante con la memoria del Alma.</p>
+
+    <p>A lo largo de mi vida he recibido visiones, palabras y herramientas en conexión con mis guías, el Corazón Estelar y mis vidas anteriores.</p>
+
+    <p>Entre estas memorias vive en mí <strong>Sèlmira</strong>, una de mis vidas clave:<br>
+    ✨ Guardiana de la Rueda de los Arquetipos y Voz Oracular del Tiempo Sagrado.</p>
+
+    <p>De aquel recuerdo desperté mi don oracular, que ahora pongo a vuestro servicio...</p>
+  </section>
+
+  <!-- Luz de Auren -->
+  <section class="max-w-4xl mx-auto px-6 py-10 text-center leading-relaxed space-y-6">
+    <h2 class="text-2xl font-semibold text-[#8a6e50]">✧ Luz de Auren ✧</h2>
+    <p class="text-[#4b3a2e]">Mi proyecto es una puerta de luz, una ofrenda de amor y servicio...</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-2xl p-5 shadow-md hover:shadow-xl transition">
+        🌟 <strong>Liberar</strong> memorias kármicas
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-2xl p-5 shadow-md hover:shadow-xl transition">
+        🌟 <strong>Activar</strong> sus dones internos
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-2xl p-5 shadow-md hover:shadow-xl transition">
+        🌟 <strong>Proteger</strong> y fortalecer su campo energético
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-2xl p-5 shadow-md hover:shadow-xl transition">
+        🌟 <strong>Recordar</strong> sus raíces estelares y vidas pasadas
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-2xl p-5 shadow-md hover:shadow-xl transition col-span-full">
+        🌟 <strong>Conectarse</strong> con su Ser auténtico y su misión
+      </div>
+    </div>
+  </section>
+
+  <!-- Lo que ofrezco -->
+  <section class="max-w-4xl mx-auto px-6 py-10 text-center leading-relaxed space-y-6">
+    <h2 class="text-2xl font-semibold text-[#8a6e50]">✧ Lo que ofrezco ✧</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 text-[#4b3a2e]">
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        ✧ Lecturas Akáshicas personalizadas
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        ✧ Tablas Sagradas canalizadas para el trabajo energético (péndulo, chakras, aura, corazón)
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        ✧ Sellos de protección, sanación kármica, unión y activación
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        ✧ Rituales escritos y audios para abrir el corazón y el trabajo interior
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        ✧ Activaciones energéticas personalizadas
+      </div>
+      <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        ✧ Acompañamiento espiritual continuo
+      </div>
+    </div>
+    <div class="bg-[#fffaf5] border border-[#f1e5d8] rounded-xl p-5 shadow-sm hover:shadow-md transition">
+      ✧ Velas rituales y herramientas sagradas hechas a medida
+    </div>
+  </section>
+
+  <!-- Descubra más -->
+  <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold text-[#8a6e50] mb-10">✧ Descubra más ✧</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Velas -->
+      <a href="https://lucediauren.github.io/index.spa.html" class="block group overflow-hidden rounded-2xl border border-[#f1e5d8] bg-white shadow-md hover:shadow-xl transition">
+        <img src="./media/IMG-20250713-WA0025.jpg" alt="Velas rituales"
+             class="w-full rounded-t-2xl transition-transform duration-300 group-hover:scale-105">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-[#7e5c48] group-hover:underline">Velas rituales</h3>
+        </div>
+      </a>
+
+      <!-- Tablas -->
+      <a href="tavole.spa.html" class="block group overflow-hidden rounded-2xl border border-[#f1e5d8] bg-white shadow-md hover:shadow-xl transition">
+        <img src="./media/IMG-20250712-WA0048.jpg" alt="Tablas sagradas"
+             class="w-full rounded-t-2xl transition-transform duration-300 group-hover:scale-105">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-[#7e5c48] group-hover:underline">Tablas sagradas</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Conclusión -->
+  <section class="max-w-3xl mx-auto px-6 py-10 text-center leading-relaxed">
+  <p>Para más información únete a nuestro <a style="text-decoration-line: underline;" href="https://chat.whatsapp.com/EyN0APY6FWSJttzL9jQCHE?mode=r_c
+">Grupo de WhatsApp</a> </p>
+    <p class="mb-4 italic">Todo lo que creo y comparto nace en conexión con el Corazón Estelar.</p>
+    <p class="font-semibold">Si sientes que quieres hacer este viaje, puedes escribirme...</p>
+    <p class="mt-6 text-[#7e5c48]">Con amor y presencia,<br><span class="font-bold">Elarah Inya ∞</span></p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Portal Auralis. Reservados todos los derechos.
+  </footer>
+
+  <!-- Script de menú -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("-translate-x-full");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const langBtn = document.getElementById("languageDropdownBtn");
+      const langMenu = document.getElementById("languageDropdown");
+
+      langBtn.addEventListener("click", function () {
+        langMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+          langMenu.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
+
